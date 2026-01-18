@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
             <a 
               href="#services" 
               onClick={(e) => handleHeroClick(e, '#services')}
-              className="w-full sm:w-auto px-[2.1rem] py-[0.92rem] bg-white border border-slate-200 text-slate-700 rounded-full font-bold text-[0.918rem] lg:text-[1.05rem] hover:border-slate-300 hover:bg-slate-50 transition-all text-center shadow-sm"
+              className="w-full sm:w-auto px-[2.1rem] py-[0.92rem] bg-slate-50 border border-slate-100 text-slate-700 rounded-full font-bold text-[0.918rem] lg:text-[1.05rem] hover:bg-slate-100 transition-all text-center shadow-sm"
             >
               Explore Services
             </a>
@@ -89,7 +89,10 @@ export const Hero: React.FC = () => {
         </div>
 
         <div className="lg:col-span-5 xl:col-span-6 relative flex justify-center lg:justify-end">
-          <ScrollReveal direction="left" delay={0.2} duration={1} className="w-full max-w-[441px] lg:max-w-[462px] xl:max-w-[535px]">
+          <ScrollReveal direction="left" delay={0.2} duration={1} className="w-full max-w-[441px] lg:max-w-[462px] xl:max-w-[535px] relative">
+            {/* Added an orange glow background like the reference */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-orange-400/40 rounded-full blur-[100px] -z-10"></div>
+            
             <div className="relative z-10 rounded-[2.1rem] lg:rounded-[3.15rem] overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000 border-[8.4px] border-white">
               <img 
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1260&auto=format&fit=crop" 

@@ -105,9 +105,7 @@ export const Navbar: React.FC = () => {
           <a 
             href="#book" 
             onClick={(e) => handleNavClick(e, '#book')}
-            className={`px-[1.575rem] py-[0.62rem] rounded-full text-[0.925rem] font-bold transition-all border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white ${
-              activeSection === 'book' ? 'bg-indigo-600 text-white' : 'bg-transparent'
-            }`}
+            className={`px-[1.575rem] py-[0.62rem] rounded-full text-[0.925rem] font-bold transition-all bg-indigo-600 text-white hover:bg-indigo-700 shadow-md shadow-indigo-200 active:scale-95`}
           >
             Book a Call
           </a>
@@ -141,7 +139,7 @@ export const Navbar: React.FC = () => {
           <a 
             href="#book" 
             onClick={(e) => handleNavClick(e, '#book')}
-            className="bg-transparent border-2 border-indigo-600 text-indigo-600 px-[1.3125rem] py-[1.05rem] rounded-2xl text-center font-bold text-[1.18rem]"
+            className="bg-indigo-600 text-white px-[1.3125rem] py-[1.05rem] rounded-2xl text-center font-bold text-[1.18rem] shadow-lg shadow-indigo-100"
           >
             Book a Call
           </a>

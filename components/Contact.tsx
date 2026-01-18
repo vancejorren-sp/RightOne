@@ -97,7 +97,7 @@ export const Contact: React.FC = () => {
                         name="Full Name" 
                         required 
                         placeholder="John Doe"
-                        className="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl text-[1rem] focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 outline-none transition-all placeholder:text-slate-300 shadow-sm" 
+                        className="w-full px-5 py-4 bg-white border border-slate-300 rounded-xl text-[1rem] focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 outline-none transition-all placeholder:text-slate-300 shadow-sm" 
                       />
                     </div>
                     <div className="flex flex-col gap-2">
@@ -107,7 +107,7 @@ export const Contact: React.FC = () => {
                         name="Email" 
                         required 
                         placeholder="john@email.com"
-                        className="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl text-[1rem] focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 outline-none transition-all placeholder:text-slate-300 shadow-sm" 
+                        className="w-full px-5 py-4 bg-white border border-slate-300 rounded-xl text-[1rem] focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 outline-none transition-all placeholder:text-slate-300 shadow-sm" 
                       />
                     </div>
                   </div>
@@ -117,7 +117,7 @@ export const Contact: React.FC = () => {
                     <div className="relative">
                       <select 
                         name="Interest" 
-                        className="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl text-[1rem] outline-none cursor-pointer focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 appearance-none transition-all shadow-sm"
+                        className="w-full px-5 py-4 bg-white border border-slate-300 rounded-xl text-[1rem] outline-none cursor-pointer focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 appearance-none transition-all shadow-sm"
                       >
                         <option>Hiring New Talent</option>
                         <option>My Next Career Move</option>
@@ -136,7 +136,7 @@ export const Contact: React.FC = () => {
                       name="Message" 
                       rows={4} 
                       placeholder="How can we help you today?"
-                      className="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl text-[1rem] outline-none resize-none focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 transition-all placeholder:text-slate-300 shadow-sm"
+                      className="w-full px-5 py-4 bg-white border border-slate-300 rounded-xl text-[1rem] outline-none resize-none focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 transition-all placeholder:text-slate-300 shadow-sm"
                     ></textarea>
                   </div>
 

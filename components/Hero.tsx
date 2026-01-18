@@ -27,8 +27,8 @@ export const Hero: React.FC = () => {
           <div className="relative z-10">
             <h1 className="text-5xl md:text-6xl lg:text-[5rem] xl:text-[5.5rem] font-serif font-bold tracking-tight text-slate-900 leading-[1.1] mb-6">
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2 lg:gap-x-6">
-                <LineReveal text="Find your" className="pr-2" />
-                <ScrollReveal direction="left" delay={0.4} duration={0.6}>
+                <LineReveal text="Find your" className="pr-2" delay={0.1} />
+                <ScrollReveal direction="left" delay={0.35} duration={0.5}>
                   <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-600 text-[10px] lg:text-[11px] font-bold tracking-widest uppercase whitespace-nowrap border border-indigo-100/50 align-middle">
                     Modern Recruitment Solutions
                   </span>
@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
                   initial={{ y: "100%" }}
                   whileInView={{ y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.1, ease: [0.21, 0.47, 0.32, 0.98] }}
+                  transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                   className="block text-indigo-600 italic font-normal lowercase leading-[1.2]"
                 >
                   right<span className="font-serif font-bold text-slate-900 not-italic"> one.</span>
@@ -48,13 +48,13 @@ export const Hero: React.FC = () => {
             </h1>
           </div>
 
-          <ScrollReveal delay={0.3}>
+          <ScrollReveal delay={0.4}>
             <p className="text-base lg:text-lg text-slate-500 leading-relaxed mb-10 max-w-xl font-medium">
               Empowering young talent and providing mid-size companies with fast, quality, and affordable hiring. Your growth starts with the right people.
             </p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.4} className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6">
+          <ScrollReveal delay={0.5} className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6">
             <a 
               href="#book" 
               onClick={(e) => handleHeroClick(e, '#book')}
@@ -90,7 +90,7 @@ export const Hero: React.FC = () => {
         </div>
 
         <div className="lg:col-span-5 xl:col-span-6 relative flex justify-center lg:justify-end">
-          <ScrollReveal direction="left" delay={0.2} duration={1} className="w-full max-w-[500px] xl:max-w-none">
+          <ScrollReveal direction="left" delay={0.15} duration={0.8} className="w-full max-w-[500px] xl:max-w-none">
             <div className="relative z-10 rounded-[2.5rem] lg:rounded-[3.5rem] overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000">
               <img 
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop" 
@@ -101,9 +101,9 @@ export const Hero: React.FC = () => {
             
             {/* Floating UI element */}
             <motion.div 
-              animate={{ y: [0, -15, 0] }}
+              animate={{ y: [0, -12, 0] }}
               transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 lg:-bottom-10 lg:-left-10 z-20 bg-white p-6 lg:p-8 rounded-2xl lg:rounded-3xl shadow-2xl border border-slate-50 max-w-[240px] lg:max-w-xs"
+              className="absolute -bottom-4 -left-4 lg:-bottom-8 lg:-left-8 z-20 bg-white p-6 lg:p-8 rounded-2xl lg:rounded-3xl shadow-2xl border border-slate-50 max-w-[240px] lg:max-w-xs"
             >
               <div className="flex items-center space-x-3 lg:space-x-4">
                 <div className="w-10 h-10 lg:w-12 lg:h-12 bg-indigo-50 text-indigo-600 rounded-xl lg:rounded-2xl flex items-center justify-center flex-shrink-0">

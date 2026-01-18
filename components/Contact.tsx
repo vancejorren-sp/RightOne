@@ -28,21 +28,10 @@ export const Contact: React.FC = () => {
     <section id="book" className="py-[4.2rem] lg:py-[5.25rem] bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-slate-50 rounded-[2.1rem] lg:rounded-[3.15rem] overflow-hidden grid lg:grid-cols-5 border border-slate-100 shadow-xl">
-          {/* Left Panel with Branding */}
+          {/* Left Panel - Information only, logo removed per request */}
           <div className="lg:col-span-2 bg-indigo-600 p-[2.1rem] lg:p-[3.15rem] text-white flex flex-col justify-between">
             <div>
               <ScrollReveal direction="right">
-                <div className="flex items-center gap-3 mb-8 lg:mb-12">
-                  <img 
-                    src="https://res.cloudinary.com/dlaykkhkc/image/upload/v1768728865/Rightone_Logo_f9irxr.svg" 
-                    alt="RightOne Logo" 
-                    className="h-10 w-auto brightness-0 invert"
-                  />
-                  <span className="text-2xl font-serif font-bold tracking-tight">
-                    RightOne<span className="text-indigo-200">.</span>
-                  </span>
-                </div>
-                
                 <h2 className="text-[1.97rem] lg:text-[2.625rem] font-serif font-bold mb-[1.575rem] leading-tight">Let's talk hiring.</h2>
                 <p className="text-indigo-100 text-[0.918rem] lg:text-[1.05rem] mb-[2.625rem] opacity-90">
                   Ready to find the right one? Book a consultation call to get started.

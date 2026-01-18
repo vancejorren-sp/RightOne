@@ -73,12 +73,12 @@ export const Navbar: React.FC = () => {
         <a 
           href="#" 
           onClick={(e) => handleNavClick(e, '#')} 
-          className="flex items-center gap-[0.525rem] group relative -left-4"
+          className="flex items-center gap-3 group relative"
         >
           <img 
             src="https://res.cloudinary.com/dlaykkhkc/image/upload/v1768728865/Rightone_Logo_f9irxr.svg" 
-            alt="RightOne Icon" 
-            className="h-[2.625rem] w-auto"
+            alt="RightOne Logo" 
+            className="h-10 w-auto"
           />
           <span className="text-[1.575rem] font-serif font-bold tracking-tight text-slate-900 group-hover:text-indigo-600 transition-colors">
             RightOne<span className="text-indigo-600">.</span>
@@ -105,8 +105,8 @@ export const Navbar: React.FC = () => {
           <a 
             href="#book" 
             onClick={(e) => handleNavClick(e, '#book')}
-            className={`bg-indigo-600 text-white px-[1.575rem] py-[0.68rem] rounded-full text-[0.925rem] font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100/50 ${
-              activeSection === 'book' ? 'ring-2 ring-indigo-600 ring-offset-2' : ''
+            className={`px-[1.575rem] py-[0.62rem] rounded-full text-[0.925rem] font-bold transition-all border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white ${
+              activeSection === 'book' ? 'bg-indigo-600 text-white' : 'bg-transparent'
             }`}
           >
             Book a Call
@@ -141,7 +141,7 @@ export const Navbar: React.FC = () => {
           <a 
             href="#book" 
             onClick={(e) => handleNavClick(e, '#book')}
-            className="bg-indigo-600 text-white px-[1.3125rem] py-[1.05rem] rounded-2xl text-center font-bold text-[1.18rem] shadow-xl shadow-indigo-100/50"
+            className="bg-transparent border-2 border-indigo-600 text-indigo-600 px-[1.3125rem] py-[1.05rem] rounded-2xl text-center font-bold text-[1.18rem]"
           >
             Book a Call
           </a>

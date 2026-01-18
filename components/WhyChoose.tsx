@@ -35,7 +35,7 @@ export const WhyChoose: React.FC = () => {
           
           <div className="grid lg:grid-cols-2 gap-16 relative z-10">
             <div>
-              <ScrollReveal direction="right">
+              <ScrollReveal>
                 <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-8">
                   Why companies choose <span className="text-indigo-200">RightOne</span> over traditional agencies.
                 </h2>
@@ -57,7 +57,7 @@ export const WhyChoose: React.FC = () => {
 
             <div className="grid sm:grid-cols-2 gap-8">
               {reasons.map((r, i) => (
-                <ScrollReveal key={i} delay={0.2 + (i * 0.1)} className="bg-indigo-700/40 p-6 rounded-2xl border border-indigo-400/30">
+                <ScrollReveal key={i} className="bg-indigo-700/40 p-6 rounded-2xl border border-indigo-400/30">
                   <div className="w-10 h-10 bg-indigo-400/30 rounded-lg flex items-center justify-center mb-4">
                     {r.icon}
                   </div>

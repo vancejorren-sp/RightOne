@@ -34,7 +34,7 @@ export const Services: React.FC = () => {
   return (
     <section id="services" className="py-[4.2rem] lg:py-[5.25rem] bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 text-center mb-[3.15rem]">
-        <ScrollReveal>
+        <ScrollReveal delay={0.1}>
           <span className="text-indigo-600 font-bold tracking-widest uppercase text-[0.82rem] lg:text-[0.918rem]">Our Services</span>
           <h2 className="text-[1.97rem] lg:text-[2.625rem] font-bold text-slate-900 mt-[0.525rem]">Solutions for every stage.</h2>
         </ScrollReveal>
@@ -42,7 +42,7 @@ export const Services: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-[1.575rem] lg:gap-[2.1rem]">
         {services.map((s, i) => (
-          <ScrollReveal key={i} delay={0.1 * i} className="h-full">
+          <ScrollReveal key={i} delay={0.15 + (i * 0.05)} className="h-full">
             <div className="bg-white p-[1.575rem] lg:p-[2.1rem] rounded-[1.31rem] lg:rounded-[1.97rem] border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full group">
               <div className={`w-[3.15rem] h-[3.15rem] ${s.color} rounded-xl flex items-center justify-center mb-[1.31rem] group-hover:scale-105 transition-transform`}>
                 {s.icon}

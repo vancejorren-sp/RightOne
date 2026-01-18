@@ -26,7 +26,7 @@ export const About: React.FC = () => {
     <section id="about" className="py-[4.2rem] lg:py-[5.25rem] bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-[3.15rem] lg:gap-[4.2rem] items-center">
-          <ScrollReveal direction="right">
+          <ScrollReveal direction="right" delay={0.1}>
             <div className="relative">
               <div className="absolute -top-[1.05rem] -left-[1.05rem] w-[4.2rem] h-[4.2rem] bg-indigo-50 rounded-xl -z-10"></div>
               <img 
@@ -38,7 +38,7 @@ export const About: React.FC = () => {
           </ScrollReveal>
 
           <div>
-            <ScrollReveal>
+            <ScrollReveal delay={0.1}>
               <span className="text-indigo-600 font-bold tracking-widest uppercase text-[0.82rem] lg:text-[0.918rem]">About RightOne</span>
               <h2 className="text-[1.97rem] lg:text-[2.625rem] font-bold text-slate-900 mt-[0.525rem] mb-[1.575rem] leading-tight">
                 We believe everyone deserves the <span className="text-indigo-600">Right Match.</span>
@@ -50,7 +50,7 @@ export const About: React.FC = () => {
 
             <div className="space-y-[1.3125rem] lg:space-y-[1.575rem]">
               {values.map((v, i) => (
-                <ScrollReveal key={i} delay={0.1 * i} direction="left">
+                <ScrollReveal key={i} delay={0.2 + (i * 0.05)} direction="up">
                   <div className="flex items-start space-x-[1.05rem]">
                     <div className="mt-[0.26rem] w-[2.625rem] h-[2.625rem] bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       {v.icon}

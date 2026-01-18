@@ -15,13 +15,13 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
   delay = 0, 
   direction = 'up',
   className = "",
-  duration = 0.8
+  duration = 0.6
 }) => {
   const directions = {
-    up: { y: 40, x: 0 },
-    down: { y: -40, x: 0 },
-    left: { x: 40, y: 0 },
-    right: { x: -40, y: 0 },
+    up: { y: 30, x: 0 },
+    down: { y: -30, x: 0 },
+    left: { x: 30, y: 0 },
+    right: { x: -30, y: 0 },
   };
 
   return (
@@ -32,11 +32,11 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
         x: directions[direction].x 
       }}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ once: true, margin: "-50px" }}
       transition={{ 
         duration, 
         delay, 
-        ease: [0.21, 0.47, 0.32, 0.98] 
+        ease: [0.16, 1, 0.3, 1] // Out-Expo for high-end feel
       }}
       className={className}
     >
@@ -47,13 +47,13 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
 
 export const LineReveal: React.FC<{ text: string, className?: string, delay?: number }> = ({ text, className = "", delay = 0 }) => {
   return (
-    <div className={`overflow-hidden py-4 px-2 -my-4 -mx-2 ${className}`}>
+    <div className={`overflow-hidden py-2 px-2 -my-2 -mx-2 ${className}`}>
       <motion.span
         className="block"
         initial={{ y: "100%" }}
         whileInView={{ y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
+        transition={{ duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] }}
       >
         {text}
       </motion.span>

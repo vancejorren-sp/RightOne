@@ -31,7 +31,7 @@ export const Contact: React.FC = () => {
           {/* Left Panel - Information only, logo removed per request */}
           <div className="lg:col-span-2 bg-indigo-600 p-[2.1rem] lg:p-[3.15rem] text-white flex flex-col justify-between">
             <div>
-              <ScrollReveal direction="right">
+              <ScrollReveal direction="right" delay={0.1}>
                 <h2 className="text-[1.97rem] lg:text-[2.625rem] font-serif font-bold mb-[1.575rem] leading-tight">Let's talk hiring.</h2>
                 <p className="text-indigo-100 text-[0.918rem] lg:text-[1.05rem] mb-[2.625rem] opacity-90">
                   Ready to find the right one? Book a consultation call to get started.
@@ -39,7 +39,7 @@ export const Contact: React.FC = () => {
               </ScrollReveal>
 
               <div className="space-y-[1.575rem] lg:space-y-[2.1rem]">
-                <ScrollReveal direction="right" delay={0.1}>
+                <ScrollReveal direction="right" delay={0.2}>
                   <div className="flex items-center space-x-[1.05rem] group cursor-pointer" onClick={() => window.location.href = 'tel:9724090650'}>
                     <div className="w-[2.625rem] h-[2.625rem] bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
                       <Phone className="w-[1.05rem] h-[1.05rem]" />
@@ -51,7 +51,7 @@ export const Contact: React.FC = () => {
                   </div>
                 </ScrollReveal>
 
-                <ScrollReveal direction="right" delay={0.2}>
+                <ScrollReveal direction="right" delay={0.25}>
                   <div className="flex items-center space-x-[1.05rem] group cursor-pointer" onClick={() => window.location.href = 'mailto:shivampatadiya5@gmail.com'}>
                     <div className="w-[2.625rem] h-[2.625rem] bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
                       <Mail className="w-[1.05rem] h-[1.05rem]" />
@@ -65,16 +65,16 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-[3.15rem] pt-[1.575rem] border-t border-white/10 hidden lg:block">
+            <ScrollReveal delay={0.3} direction="up" className="mt-[3.15rem] pt-[1.575rem] border-t border-white/10 hidden lg:block">
               <p className="text-[0.78rem] italic opacity-70 font-medium font-serif">
                 "Finding talent shouldn't be hard. We make it simple."
               </p>
-            </div>
+            </ScrollReveal>
           </div>
 
           {/* Right Panel with Form */}
           <div className="lg:col-span-3 p-[2.1rem] lg:p-[3.15rem] bg-white relative">
-            <ScrollReveal direction="left">
+            <ScrollReveal direction="left" delay={0.15}>
               <h3 className="text-[1.8rem] lg:text-[2.2rem] font-serif font-bold text-slate-900 mb-8">Book a Call</h3>
               
               {submitted ? (

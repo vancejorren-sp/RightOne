@@ -30,12 +30,12 @@ export const WhyChoose: React.FC = () => {
   return (
     <section id="why-us" className="py-[4.2rem] lg:py-[5.25rem] bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="bg-indigo-600 rounded-[2.1rem] lg:rounded-[3.15rem] p-[2.1rem] lg:p-[4.2rem] text-white overflow-hidden relative">
+        <div className="bg-indigo-600 rounded-[2.1rem] lg:rounded-[3.15rem] p-[2.1rem] lg:p-[4.2rem] text-white overflow-hidden relative shadow-2xl">
           <div className="absolute top-0 right-0 w-[21rem] h-[21rem] bg-indigo-500 rounded-full blur-[84px] opacity-20 -mr-[4.2rem] -mt-[4.2rem]"></div>
           
           <div className="grid lg:grid-cols-2 gap-[2.625rem] lg:gap-[4.2rem] relative z-10">
             <div>
-              <ScrollReveal direction="right">
+              <ScrollReveal direction="right" delay={0.1}>
                 <h2 className="text-[1.575rem] lg:text-[2.625rem] font-bold leading-tight mb-[1.575rem]">
                   Why companies choose <span className="text-indigo-200">RightOne</span>.
                 </h2>
@@ -43,21 +43,21 @@ export const WhyChoose: React.FC = () => {
                   We've reimagined recruitment to be faster, more transparent, and significantly more cost-effective.
                 </p>
                 <div className="flex space-x-[2.625rem]">
-                  <div>
+                  <ScrollReveal delay={0.2} direction="up">
                     <h3 className="text-[1.97rem] lg:text-[2.36rem] font-bold text-white mb-[0.26rem]">98%</h3>
                     <p className="text-indigo-200 text-[0.656rem] uppercase font-bold tracking-wider">Retention</p>
-                  </div>
-                  <div>
+                  </ScrollReveal>
+                  <ScrollReveal delay={0.25} direction="up">
                     <h3 className="text-[1.97rem] lg:text-[2.36rem] font-bold text-white mb-[0.26rem]">48h</h3>
                     <p className="text-indigo-200 text-[0.656rem] uppercase font-bold tracking-wider">Shortlist</p>
-                  </div>
+                  </ScrollReveal>
                 </div>
               </ScrollReveal>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-[1.05rem] lg:gap-[1.575rem]">
               {reasons.map((r, i) => (
-                <ScrollReveal key={i} delay={0.2 + (i * 0.1)} className="bg-indigo-700/30 p-[1.31rem] rounded-2xl border border-indigo-400/20">
+                <ScrollReveal key={i} delay={0.2 + (i * 0.05)} className="bg-indigo-700/30 p-[1.31rem] rounded-2xl border border-indigo-400/20">
                   <div className="w-[2.36rem] h-[2.36rem] bg-indigo-400/20 rounded-lg flex items-center justify-center mb-[0.78rem]">
                     {r.icon}
                   </div>

@@ -24,41 +24,40 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 xl:col-span-6">
-          <div className="relative z-10">
-            <h1 className="text-5xl md:text-6xl lg:text-[5rem] xl:text-[5.5rem] font-serif font-bold tracking-tight text-slate-900 leading-[1.1] mb-6">
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 lg:gap-x-6">
-                <LineReveal text="Find your" className="pr-2" />
-                <ScrollReveal direction="left" delay={0.4} duration={0.6}>
-                  <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-50 text-indigo-600 text-[10px] lg:text-[11px] font-bold tracking-widest uppercase whitespace-nowrap border border-indigo-100/50 align-middle">
-                    Modern Recruitment Solutions
-                  </span>
-                </ScrollReveal>
-              </div>
-              <div className="overflow-hidden pb-4 px-2 -mb-4 -mx-2">
+          <div className="relative z-10 mb-10">
+            <h1 className="text-5xl md:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] font-serif font-bold tracking-tight text-slate-900 leading-[1.05]">
+              <LineReveal text="Find your" className="-ml-2" />
+              <div className="overflow-hidden pb-2 -mt-2 lg:-mt-4">
                 <motion.span 
                   initial={{ y: "100%" }}
                   whileInView={{ y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.1, ease: [0.21, 0.47, 0.32, 0.98] }}
-                  className="block text-indigo-600 italic font-normal lowercase leading-[1.2]"
+                  transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
+                  className="block text-indigo-600 italic font-normal lowercase"
                 >
                   right<span className="font-serif font-bold text-slate-900 not-italic"> one.</span>
                 </motion.span>
               </div>
             </h1>
+            
+            <ScrollReveal direction="up" delay={0.5} duration={0.8} className="mt-8">
+              <span className="inline-block px-5 py-2.5 rounded-full bg-indigo-50/50 text-indigo-600 text-[11px] font-bold tracking-[0.2em] uppercase border border-indigo-100/50 shadow-sm">
+                Modern Recruitment Solutions
+              </span>
+            </ScrollReveal>
           </div>
 
-          <ScrollReveal delay={0.3}>
+          <ScrollReveal delay={0.6}>
             <p className="text-base lg:text-lg text-slate-500 leading-relaxed mb-10 max-w-xl font-medium">
               Empowering young talent and providing mid-size companies with fast, quality, and affordable hiring. Your growth starts with the right people.
             </p>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.4} className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6">
+          <ScrollReveal delay={0.7} className="flex flex-col sm:flex-row items-center gap-4 lg:gap-6">
             <a 
               href="#book" 
               onClick={(e) => handleHeroClick(e, '#book')}
-              className="w-full sm:w-auto px-8 lg:px-10 py-4 lg:py-5 bg-indigo-600 text-white rounded-[2rem] font-bold text-base lg:text-lg hover:bg-indigo-700 transition-all flex items-center justify-center shadow-[0_15px_35px_-10px_rgba(145,0,73,0.3)] group"
+              className="w-full sm:w-auto px-8 lg:px-10 py-4 lg:py-5 bg-indigo-600 text-white rounded-full font-bold text-base lg:text-lg hover:bg-indigo-700 transition-all flex items-center justify-center shadow-[0_15px_35px_-10px_rgba(145,0,73,0.3)] group"
             >
               Book a Call
               <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -66,13 +65,13 @@ export const Hero: React.FC = () => {
             <a 
               href="#services" 
               onClick={(e) => handleHeroClick(e, '#services')}
-              className="w-full sm:w-auto px-8 lg:px-10 py-4 lg:py-5 bg-white border border-slate-200 text-[#2d3748] rounded-[2rem] font-bold text-base lg:text-lg hover:border-slate-300 hover:bg-slate-50 transition-all text-center shadow-sm"
+              className="w-full sm:w-auto px-8 lg:px-10 py-4 lg:py-5 bg-white border border-slate-200 text-slate-700 rounded-full font-bold text-base lg:text-lg hover:border-slate-300 hover:bg-slate-50 transition-all text-center shadow-sm"
             >
               Explore Services
             </a>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.6} className="mt-12 lg:mt-16 flex items-center space-x-4">
+          <ScrollReveal delay={0.9} className="mt-12 lg:mt-16 flex items-center space-x-4">
             <div className="flex -space-x-2.5">
               {[1, 2, 3, 4].map((i) => (
                 <img 

@@ -52,7 +52,7 @@ export const Navbar: React.FC = () => {
     const element = document.getElementById(targetId);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 80,
+        top: element.offsetTop - 85,
         behavior: 'smooth'
       });
     }
@@ -67,37 +67,37 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+      scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-[1.05rem]' : 'bg-transparent py-[1.575rem]'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a 
           href="#" 
           onClick={(e) => handleNavClick(e, '#')} 
-          className="flex items-center gap-2 group relative -left-4"
+          className="flex items-center gap-[0.525rem] group relative -left-4"
         >
           <img 
             src="https://res.cloudinary.com/dlaykkhkc/image/upload/v1768728865/Rightone_Logo_f9irxr.svg" 
             alt="RightOne Icon" 
-            className="h-10 w-auto"
+            className="h-[2.625rem] w-auto"
           />
-          <span className="text-2xl font-serif font-bold tracking-tight text-slate-900 group-hover:text-indigo-600 transition-colors">
+          <span className="text-[1.575rem] font-serif font-bold tracking-tight text-slate-900 group-hover:text-indigo-600 transition-colors">
             RightOne<span className="text-indigo-600">.</span>
           </span>
         </a>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center space-x-10">
+        <div className="hidden md:flex items-center space-x-[2.625rem]">
           {navLinks.map((link) => (
             <a 
               key={link.id} 
               href={link.href} 
               onClick={(e) => handleNavClick(e, link.href)}
-              className={`text-sm font-semibold transition-colors duration-300 relative group ${
+              className={`text-[0.925rem] font-semibold transition-colors duration-300 relative group ${
                 activeSection === link.id ? 'text-indigo-600' : 'text-slate-600 hover:text-indigo-600'
               }`}
             >
               {link.label}
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-indigo-600 transition-all duration-300 ${
+              <span className={`absolute -bottom-1.5 left-0 h-0.5 bg-indigo-600 transition-all duration-300 ${
                 activeSection === link.id ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
             </a>
@@ -105,7 +105,7 @@ export const Navbar: React.FC = () => {
           <a 
             href="#book" 
             onClick={(e) => handleNavClick(e, '#book')}
-            className={`bg-indigo-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100 ${
+            className={`bg-indigo-600 text-white px-[1.575rem] py-[0.68rem] rounded-full text-[0.925rem] font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100/50 ${
               activeSection === 'book' ? 'ring-2 ring-indigo-600 ring-offset-2' : ''
             }`}
           >
@@ -115,23 +115,23 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-slate-900 p-2" 
+          className="md:hidden text-slate-900 p-2.5" 
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={25} /> : <Menu size={25} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t md:hidden flex flex-col p-8 space-y-6">
+        <div className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t md:hidden flex flex-col p-9 space-y-7">
           {navLinks.map((link) => (
             <a 
               key={link.id} 
               href={link.href} 
               onClick={(e) => handleNavClick(e, link.href)}
-              className={`text-xl font-bold ${
+              className={`text-[1.3125rem] font-bold ${
                 activeSection === link.id ? 'text-indigo-600' : 'text-slate-800'
               }`}
             >
@@ -141,7 +141,7 @@ export const Navbar: React.FC = () => {
           <a 
             href="#book" 
             onClick={(e) => handleNavClick(e, '#book')}
-            className="bg-indigo-600 text-white px-5 py-4 rounded-2xl text-center font-bold text-lg shadow-xl shadow-indigo-100"
+            className="bg-indigo-600 text-white px-[1.3125rem] py-[1.05rem] rounded-2xl text-center font-bold text-[1.18rem] shadow-xl shadow-indigo-100/50"
           >
             Book a Call
           </a>

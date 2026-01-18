@@ -47,7 +47,7 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
 
 export const LineReveal: React.FC<{ text: string, className?: string, delay?: number }> = ({ text, className = "", delay = 0 }) => {
   return (
-    <div className={`overflow-hidden ${className}`}>
+    <div className={`overflow-hidden py-4 -my-4 ${className}`}>
       <motion.span
         className="block"
         initial={{ y: "100%" }}

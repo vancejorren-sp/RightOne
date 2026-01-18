@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="relative">
-            <h1 className="text-6xl lg:text-[5.5rem] font-serif font-bold tracking-tight text-slate-900 leading-[1] mb-8">
+            <h1 className="text-6xl lg:text-[5.5rem] font-serif font-bold tracking-tight text-slate-900 leading-[1.1] mb-8">
               <div className="flex flex-wrap items-center gap-x-6">
                 <LineReveal text="Find your" />
                 <ScrollReveal direction="left" delay={0.4} duration={0.6}>

@@ -19,7 +19,7 @@ export const Contact: React.FC = () => {
       `Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\nMessage:\n${message}`
     );
 
-    window.location.href = `mailto:shivampatadiya5@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:anjali.rightone@gmail.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 8000);
   };
@@ -52,13 +52,13 @@ export const Contact: React.FC = () => {
                 </ScrollReveal>
 
                 <ScrollReveal direction="right" delay={0.25}>
-                  <div className="flex items-center space-x-[1.05rem] group cursor-pointer" onClick={() => window.location.href = 'mailto:shivampatadiya5@gmail.com'}>
+                  <div className="flex items-center space-x-[1.05rem] group cursor-pointer" onClick={() => window.location.href = 'mailto:anjali.rightone@gmail.com'}>
                     <div className="w-[2.625rem] h-[2.625rem] bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
                       <Mail className="w-[1.05rem] h-[1.05rem]" />
                     </div>
                     <div>
                       <p className="text-[0.656rem] text-indigo-200 font-bold uppercase tracking-widest">Email</p>
-                      <p className="text-[1.05rem] lg:text-[1.18rem] font-semibold break-all">shivampatadiya5@gmail.com</p>
+                      <p className="text-[1.05rem] lg:text-[1.18rem] font-semibold break-all">anjali.rightone@gmail.com</p>
                     </div>
                   </div>
                 </ScrollReveal>
